@@ -1,0 +1,94 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eeeeea;
+}
+
+/* Estilos para el encabezado */
+.header {
+    text-align: center;
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header p {
+    margin-top: 10px;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilos para las columnas de productos */
+.product {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    text-align: center;
+    background-color: #6a0dad;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-buttons {
+    margin-top: 20px;
+}
+
+.footer-buttons a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #fefdff;
+    line-height: 60px;
+    font-size: 24px;
+    color: #110101;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.footer-buttons a:hover {
+    background-color: #ffd700;
+}

@@ -1,0 +1,46 @@
+
+/* Estilos para la galería de imágenes */
+.gallery-container {
+    position: relative; /* Establece posición relativa */
+    text-align: center; /* Centra el texto horizontalmente */
+    background-color: #f5f5f5; /* Color de fondo del contenedor */
+    padding: 20px; /* Espacio interno */
+    margin-top: 20px; /* Margen superior para separar del contenido anterior */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+.gallery-container h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    background-color: #6a0dad; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 20px; /* Borde redondeado */
+    display: inline-block; /* Ajusta el tamaño al del contenido */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Envolver contenido */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    align-items: center; /* Centrar las imágenes verticalmente */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.gallery img {
+    width: 250px; /* Ancho fijo */
+    height: auto; /* Altura ajustada automáticamente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra similar a la de los productos */
+    transition: transform 0.3s ease; /* Transición para el efecto de zoom */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    z-index: 1; /* Asegura que la imagen ampliada esté sobre las otras */
+}
+
+@media only screen and (max-width: 768px) {
+    .gallery img {
+        width: 80vw; /* Ancho del viewport para dispositivos móviles y tabletas */
+    }
+}

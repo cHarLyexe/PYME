@@ -1,0 +1,33 @@
+/* Estilos para los botones del encabezado */
+.header-buttons a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #ffffff;
+    line-height: 60px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-buttons a:hover {
+    background-color: #ffd700;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos específicos para los botones de Instagram */
+.instagram-button,
+.instagram-button-footer {
+    background-color: #833ab4;
+}
+
+/* Estilos específicos para el botón de WhatsApp */
+.whatsapp-button,
+.whatsapp-button-footer {
+    background-color: #25D366;
+}
